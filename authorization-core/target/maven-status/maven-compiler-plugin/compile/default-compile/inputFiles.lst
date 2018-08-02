@@ -1,0 +1,9 @@
+/jimsp/authorization-soluction/authorization-core/src/main/java/br/com/hubfintech/authorization/AuthorizationCoreApplication.java
+/jimsp/authorization-soluction/authorization-core/src/main/java/br/com/hubfintech/authorization/converters/AuthorizationRequestToAuthorizationDataConverter.java
+/jimsp/authorization-soluction/authorization-core/src/main/java/br/com/hubfintech/authorization/converters/StringToBigDecimalConverter.java
+/jimsp/authorization-soluction/authorization-core/src/main/java/br/com/hubfintech/authorization/config/HazelcastConfiguration.java
+/jimsp/authorization-soluction/authorization-core/src/main/java/br/com/hubfintech/authorization/service/Create2Account.java
+/jimsp/authorization-soluction/authorization-core/src/main/java/br/com/hubfintech/authorization/AuthorizationCoreRunner.java
+/jimsp/authorization-soluction/authorization-core/src/main/java/br/com/hubfintech/authorization/config/AuthorizationConfig.java
+/jimsp/authorization-soluction/authorization-core/src/main/java/br/com/hubfintech/authorization/worker/AuthorizationWorker.java
+/jimsp/authorization-soluction/authorization-core/src/main/java/br/com/hubfintech/authorization/service/AuthorizationServiceImpl.java

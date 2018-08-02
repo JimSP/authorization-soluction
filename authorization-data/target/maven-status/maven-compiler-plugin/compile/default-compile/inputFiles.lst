@@ -1,0 +1,5 @@
+/jimsp/authorization-soluction/authorization-data/src/main/java/br/com/hubfintech/authorization/entities/AuthorizationRequestData.java
+/jimsp/authorization-soluction/authorization-data/src/main/java/br/com/hubfintech/authorization/entities/BaseEntity.java
+/jimsp/authorization-soluction/authorization-data/src/main/java/br/com/hubfintech/authorization/repositories/AccountBalanceJpaRepository.java
+/jimsp/authorization-soluction/authorization-data/src/main/java/br/com/hubfintech/authorization/entities/AccountBalanceData.java
+/jimsp/authorization-soluction/authorization-data/src/main/java/br/com/hubfintech/authorization/repositories/AuthorizationRequestDataJpaRepository.java

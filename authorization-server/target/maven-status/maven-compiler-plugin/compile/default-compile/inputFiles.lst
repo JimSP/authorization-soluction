@@ -1,0 +1,14 @@
+/jimsp/authorization-soluction/authorization-server/src/main/java/br/com/hubfintech/authorization/tcp/AuthotizationTcpServerHandle.java
+/jimsp/authorization-soluction/authorization-server/src/main/java/br/com/hubfintech/authorization/queues/Sender.java
+/jimsp/authorization-soluction/authorization-server/src/main/java/br/com/hubfintech/authorization/configurations/JacksonConfiguration.java
+/jimsp/authorization-soluction/authorization-server/src/main/java/br/com/hubfintech/authorization/AuthorizationTcpRunner.java
+/jimsp/authorization-soluction/authorization-server/src/main/java/br/com/hubfintech/authorization/configurations/HazelcastConfiguration.java
+/jimsp/authorization-soluction/authorization-server/src/main/java/br/com/hubfintech/authorization/configurations/NettyConfiguration.java
+/jimsp/authorization-soluction/authorization-server/src/main/java/br/com/hubfintech/authorization/queues/Receiver.java
+/jimsp/authorization-soluction/authorization-server/src/main/java/br/com/hubfintech/authorization/AuthorizationServerApplication.java
+/jimsp/authorization-soluction/authorization-server/src/main/java/br/com/hubfintech/authorization/configurations/AuthorizationServerConfig.java
+/jimsp/authorization-soluction/authorization-server/src/main/java/br/com/hubfintech/authorization/configurations/NettyProperties.java
+/jimsp/authorization-soluction/authorization-server/src/main/java/br/com/hubfintech/authorization/codec/AuthorizationRequestEncoder.java
+/jimsp/authorization-soluction/authorization-server/src/main/java/br/com/hubfintech/authorization/tcp/AuthorizationTcpServer.java
+/jimsp/authorization-soluction/authorization-server/src/main/java/br/com/hubfintech/authorization/queues/QueuePooling.java
+/jimsp/authorization-soluction/authorization-server/src/main/java/br/com/hubfintech/authorization/codec/AuthorizationRequestDecoder.java

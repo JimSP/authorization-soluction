@@ -1,0 +1,4 @@
+/jimsp/authorization-soluction/authorization-dto/src/main/java/br/com/hubfintech/authorization/exception/AuthorizationWithProblemException.java
+/jimsp/authorization-soluction/authorization-dto/src/main/java/br/com/hubfintech/authorization/dto/AuthorizationResponse.java
+/jimsp/authorization-soluction/authorization-dto/src/main/java/br/com/hubfintech/authorization/dto/Action.java
+/jimsp/authorization-soluction/authorization-dto/src/main/java/br/com/hubfintech/authorization/dto/AuthorizationRequest.java

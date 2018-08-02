@@ -1,0 +1,9 @@
+br/com/hubfintech/authorization/config/HazelcastConfiguration.class
+br/com/hubfintech/authorization/converters/AuthorizationRequestToAuthorizationDataConverter.class
+br/com/hubfintech/authorization/config/AuthorizationConfig.class
+br/com/hubfintech/authorization/AuthorizationCoreRunner.class
+br/com/hubfintech/authorization/converters/StringToBigDecimalConverter.class
+br/com/hubfintech/authorization/service/Create2Account.class
+br/com/hubfintech/authorization/AuthorizationCoreApplication.class
+br/com/hubfintech/authorization/service/AuthorizationServiceImpl.class
+br/com/hubfintech/authorization/worker/AuthorizationWorker.class

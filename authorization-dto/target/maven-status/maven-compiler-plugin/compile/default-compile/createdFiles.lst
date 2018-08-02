@@ -1,0 +1,6 @@
+br/com/hubfintech/authorization/dto/AuthorizationRequest.class
+br/com/hubfintech/authorization/dto/AuthorizationResponse.class
+br/com/hubfintech/authorization/dto/AuthorizationRequest$AuthorizationRequestBuilder.class
+br/com/hubfintech/authorization/exception/AuthorizationWithProblemException.class
+br/com/hubfintech/authorization/dto/AuthorizationResponse$AuthorizationResponseBuilder.class
+br/com/hubfintech/authorization/dto/Action.class

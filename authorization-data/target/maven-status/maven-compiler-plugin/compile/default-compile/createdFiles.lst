@@ -1,0 +1,7 @@
+br/com/hubfintech/authorization/entities/AccountBalanceData.class
+br/com/hubfintech/authorization/entities/AuthorizationRequestData.class
+br/com/hubfintech/authorization/repositories/AccountBalanceJpaRepository.class
+br/com/hubfintech/authorization/entities/BaseEntity.class
+br/com/hubfintech/authorization/entities/AccountBalanceData$AccountBalanceDataBuilder.class
+br/com/hubfintech/authorization/entities/AuthorizationRequestData$AuthorizationRequestDataBuilder.class
+br/com/hubfintech/authorization/repositories/AuthorizationRequestDataJpaRepository.class
