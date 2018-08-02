@@ -1,5 +1,5 @@
 # authorization-soluction
-modelo de um autorizador de simplificado.
+modelo de um autorizador simplificado.
 
 # authorization-server
   app com porta 9876 tcp em listener.
