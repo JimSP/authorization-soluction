@@ -8,6 +8,7 @@ import java.util.Arrays;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -15,6 +16,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import br.com.hubfintech.authorization.dto.Action;
 import br.com.hubfintech.authorization.dto.AuthorizationResponse;
 
+@Ignore //teste integrado, os dois servers devem estar em execução.
 public class AuthorizationTcpClient {
 	
 	private static final int BUFFER_SIZE = 1024;
