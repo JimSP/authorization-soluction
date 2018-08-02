@@ -3,8 +3,11 @@ package br.com.hubfintech.authorization.dto;
 import java.io.Serializable;
 import java.util.UUID;
 
+import javax.validation.constraints.DecimalMax;
+import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,9 +27,12 @@ public final class AuthorizationRequest implements Serializable {
 	private final Action action;
 
 	@NotBlank
+	@Size(min=14, max=19)
 	private final String cardNumber;
 
 	@NotBlank
+	@DecimalMin(value="0.01")
+	@DecimalMax(value="9999999999999999.00")
 	private final String amount;
 
 	private final UUID uuid;

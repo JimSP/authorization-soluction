@@ -32,27 +32,28 @@ public class AuthorizationServiceImpl implements AuthorizationService {
 	private ConversionService conversionService;
 
 	@Autowired
-	public Function<AuthorizationRequest, AuthorizationResponse> aprove;
+	private Function<AuthorizationRequest, AuthorizationResponse> aprove;
 
 	@Autowired
-	public Function<AuthorizationRequest, AuthorizationResponse> notAuthotized;
+	private Function<AuthorizationRequest, AuthorizationResponse> notAuthotized;
 
 	@Autowired
-	public Function<AuthorizationRequest, AuthorizationResponse> invalidAccountNumber;
+	private Function<AuthorizationRequest, AuthorizationResponse> invalidAccountNumber;
 
 	@Transactional
 	@Async
 	public void persist(final AuthorizationRequest authorizationRequest) {
+		final AuthorizationRequestData authorizationRequestData = conversionService //
+				.convert(authorizationRequest, //
+						AuthorizationRequestData.class);
+
 		authorizationRequestDataJpaRepository //
-				.save(conversionService //
-						.convert(authorizationRequest, //
-								AuthorizationRequestData.class));
+				.save(authorizationRequestData);
 	}
 
 	@Transactional
 	@Async
-	public void decreaseBalance(final AuthorizationRequest authorizationRequest,
-			final BigDecimal accountBalance) {
+	public void decreaseBalance(final AuthorizationRequest authorizationRequest, final BigDecimal accountBalance) {
 		final String cardNumber = authorizationRequest.getCardNumber();
 
 		final BigDecimal balance = accountBalance //
@@ -67,8 +68,7 @@ public class AuthorizationServiceImpl implements AuthorizationService {
 						.build());
 	}
 
-	public Pair<AuthorizationResponse, BigDecimal> authorization(
-			final AuthorizationRequest authorizationRequest) {
+	public Pair<AuthorizationResponse, BigDecimal> authorization(final AuthorizationRequest authorizationRequest) {
 		final String cardNumber = authorizationRequest.getCardNumber();
 		final BigDecimal ammount = conversionService.convert(authorizationRequest //
 				.getAmount(), BigDecimal.class);
@@ -85,8 +85,8 @@ public class AuthorizationServiceImpl implements AuthorizationService {
 							.map(mapper -> aprove.apply(authorizationRequest)) //
 							.orElse(notAuthotized.apply(authorizationRequest)) //
 							, accountBalanceDataOptional //
-								.get() //
-								.getBalance());
+									.get() //
+									.getBalance());
 		} else {
 			return Pair //
 					.of(invalidAccountNumber.apply(authorizationRequest), BigDecimal.ZERO);

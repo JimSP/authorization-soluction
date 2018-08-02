@@ -37,7 +37,7 @@ public class AuthorizationRequestData extends BaseEntity implements Serializable
 	@Column(nullable = false, length = 19)
 	private String cardNumber;
 
-	@Column(nullable = false, length=18, precision=4)
+	@Column(nullable = false, length=18)
 	private BigDecimal amount;
 
 	@Column(nullable = false, length=36)

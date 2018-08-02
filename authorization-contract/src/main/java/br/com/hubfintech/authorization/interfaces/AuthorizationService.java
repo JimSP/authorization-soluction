@@ -24,6 +24,7 @@ public interface AuthorizationService {
 					.uuid(authorizationRequest.getUuid()) //
 					.build();
 		} catch (Throwable e) {
+			e.printStackTrace();
 			return AuthorizationResponseSystemError.create(authorizationRequest);
 		}
 	}

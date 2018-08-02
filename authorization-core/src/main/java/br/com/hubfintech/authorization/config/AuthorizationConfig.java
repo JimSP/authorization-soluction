@@ -86,6 +86,7 @@ public class AuthorizationConfig {
 				.builder() //
 				.action(authorizationRequest.getAction()) //
 				.uuid(authorizationRequest.getUuid()) //
+				.code("14") //
 				.build();
 	}
 

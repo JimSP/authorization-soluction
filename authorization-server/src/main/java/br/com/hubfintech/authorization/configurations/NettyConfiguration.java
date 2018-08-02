@@ -4,6 +4,10 @@ import java.net.InetSocketAddress;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.validation.Validation;
+import javax.validation.Validator;
+import javax.validation.ValidatorFactory;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -42,6 +46,10 @@ public class NettyConfiguration {
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@Bean
 	public ServerBootstrap serverBootstrap() {
+		
+		final ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+		final Validator validator = factory.getValidator();
+		
 		final ServerBootstrap serverBootstrap = new ServerBootstrap();
 		serverBootstrap.group(bossGroup(), workerGroup()) //
 				.channel(NioServerSocketChannel.class) //
@@ -52,7 +60,7 @@ public class NettyConfiguration {
 					protected void initChannel(SocketChannel ch) throws Exception {
 						ch //
 								.pipeline() //
-								.addLast(new AuthorizationRequestDecoder(objectMapper), //
+								.addLast(new AuthorizationRequestDecoder(objectMapper, validator), //
 										authorizationRequestEncoder, //
 										authotizationTcpServerHandle);
 

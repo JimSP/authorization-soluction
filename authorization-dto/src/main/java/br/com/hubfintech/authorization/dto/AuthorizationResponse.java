@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import lombok.Builder;
@@ -19,8 +18,6 @@ public final class AuthorizationResponse implements Serializable{
 	private final Action action;
 	private final String code;
 	private final String authorizationCode;
-	
-	@JsonIgnore
 	private final UUID uuid;
 
 	@JsonCreator
@@ -28,7 +25,7 @@ public final class AuthorizationResponse implements Serializable{
 			@JsonProperty("action") final Action action, //
 			@JsonProperty("code") final String code, //
 			@JsonProperty("authorization_code") final String authorizationCode,
-			final UUID uuid) {
+			@JsonProperty(value="uuid", required = false) final UUID uuid) {
 
 		this.action = action;
 		this.code = code;
