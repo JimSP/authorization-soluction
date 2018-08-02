@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: alexandre
+Build-Jdk: 10.0.1
+Implementation-Title: authorization-core
+Implementation-Version: 0.0.1
+Implementation-Vendor-Id: br.com.hubfintech
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/authorization-soluction/authorization-core
+Created-By: Maven Integration for Eclipse
+
